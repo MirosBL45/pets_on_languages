@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Lato:wght@300;400;700&family=Playfair+Display:wght@600;700;800;900&display=swap');
+
+@mixin transition-ease {
+    transition: all 0.27s ease-in-out;
+}
+
+@mixin center-point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// font-family: 'Kanit', sans-serif;
+
+// font-family: 'Lato', sans-serif;
+
+// font-family: 'Playfair Display', serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$background_color_primary: #DAE3F3;
+$background_color_secondary: #E7F7DC;
+$background_color_third: #FDF9F6;
+$text_color_primary: #EFDFC9;
+$text_color_secondary: #42559A;
+$text_color_third: #A5696A;
+$link_color_active: #2C48AF;
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+p,
+a,
+span {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    font-weight: 400;
+    color: $text_color_third;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include transition-ease;
+}
+
+img {
+    width: 100%;
+}
+
+.active_language {
+    color: $link_color_active;
+}

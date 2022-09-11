@@ -1,0 +1,136 @@
+@include media_md {
+    header {
+        .header_content {
+            justify-content: space-between;
+        }
+    }
+
+    .all_globe {
+        margin-left: 25px;
+        margin-top: 0;
+
+        &:hover .right {
+            transform: rotateZ(90deg);
+        }
+    }
+
+    .globe_wrapper {
+        .lang {
+            font-size: 1.5rem;
+        }
+
+        img {
+            width: 17%;
+        }
+    }
+
+    .choose_language {
+        bottom: -190px;
+        left: 30px;
+    }
+
+    .master_container {
+        padding: 0 30px;
+    }
+
+
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    .nav {
+        @include center-point;
+        visibility: visible;
+        position: relative;
+        max-width: fit-content;
+
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: center;
+
+            &__item {
+                display: inline;
+                padding-right: 0.9rem;
+            }
+
+            &__link {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+@include media_lapTop {
+    .all_globe {
+        margin-left: 65px;
+    }
+
+    .master_container {
+        padding: 0 60px;
+    }
+}
+
+
+
+@include media_lg {
+    .all_globe {
+        margin-left: 40px;
+    }
+
+    .nav {
+
+        .menu-nav {
+
+            &__item {
+                display: inline;
+                padding-right: 45px;
+            }
+
+        }
+    }
+
+    .master_container {
+        padding: 0 90px;
+    }
+}
+
+
+@include media_xl {
+    .all_globe {
+        margin-left: 105px;
+    }
+
+    .nav {
+
+        .menu-nav {
+
+            &__item {
+                display: inline;
+                padding-right: 100px;
+            }
+
+        }
+    }
+
+    .master_container {
+        padding: 0 120px;
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+}
+
+
+@include media_exl {
+    .all_globe {
+        margin-left: 130px;
+    }
+
+    .master_container {
+        padding: 0 150px;
+        max-width: 2600px;
+    }
+}
