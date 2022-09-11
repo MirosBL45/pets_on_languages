@@ -209,13 +209,16 @@ header .logo {
   transition: all 0.27s ease-in-out;
 }
 .choose_language .the_lang {
-  margin-top: 10px;
+  padding: 8px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.choose_language .the_lang:first-child {
+  padding-top: 16px;
+}
 .choose_language .the_lang:last-child {
-  margin-bottom: 10px;
+  padding-bottom: 16px;
 }
 .choose_language img {
   width: 25%;
@@ -262,7 +265,7 @@ header .logo {
     width: 17%;
   }
   .choose_language {
-    bottom: -190px;
+    bottom: -230px;
     left: 30px;
   }
   .master_container {

@@ -199,12 +199,16 @@ header {
     @include transition-ease;
 
     .the_lang {
-        margin-top: 10px;
+        padding: 8px 0;
         @include center-point;
     }
 
+    .the_lang:first-child {
+        padding-top: 16px;
+    }
+
     .the_lang:last-child {
-        margin-bottom: 10px;
+        padding-bottom: 16px;
     }
 
     img {
