@@ -20,7 +20,6 @@
 <body>
 
 
-
     <header>
         <div class="header_content master_container">
             <div class="menu-btn">
@@ -41,7 +40,7 @@
                             <div class="line_hover"></div>
                         </a>
                     </li>
-                    <li class="menu-nav__item">
+                    <li class="menu-nav__item active">
                         <a href="dog.html" class="menu-nav__link">
                             <div data-dog_link class="link_text">dog</div>
                             <div class="line_hover"></div>                           
@@ -105,11 +104,11 @@
 
 
     <section class="choose_pet index_container">
-        <h2 class="choose_heading" data-choose_heading>
-            how to choose a pet
+        <h2 class="choose_heading" data-dog_heading>
+            the dog
         </h2>
-        <p class="choose_parag" data-choose_parag>
-            Regardless of all the complications that pets bring, the amount of love and happiness that animals bring to a home is immeasurable and worth every effort.
+        <p class="choose_parag" data-dog_parag>
+            Nothing can compare to a long walk with your four-legged friend on a fresh, spring morning. Or watch the joy on his face when you pick up the ball and he knows it's time to play in the nearby park! Even resting at home is better in company.
         </p>
     </section>
 
@@ -119,24 +118,24 @@
         <section class="best_pets big_flex">
             <div class="best_pets_wrapper">
                 <div class="bp_img">
-                    <img src="img/best_pets_background.jpg" alt="best_pets">
+                    <img src="img/dog_side.jpg" alt="brown_dog">
                 </div>
                 <div class="bp_text blue_padding">
-                    <h3 class="bp_heading" data-bp_heading>
-                        The best pets - cats and dogs
+                    <h3 class="bp_heading" data-bd_heading>
+                        Dog owners are more active
                     </h3>
-                    <p class="bp_parag" data-bp_parag>
-                        The best pets are cats and dogs. At least that's what the number of families who narrowed their selection down to these two categories says. The choice can be difficult, because many factors separate them into two completely different categories.
+                    <p class="bp_parag" data-bd_parag>
+                        Numerous facts tell us that a dog is an great pet. To begin with, the dog will not allow you to sleep long and be lazy in the morning. With the dog, you will be forced not only to get up earlier, but also to move and take him outside. Thus, your morning will pass in a pleasant walk with your pet, which is certainly a healthier and more beautiful way to start the day.
                     </p>
                 </div>
             </div>
     
             <div class="but_how">
-                <h3 class="bp_heading" data-bh_heading>
-                    but how to choose?
+                <h3 class="bp_heading" data-responsibility_heading>
+                    Children are taught responsibility
                 </h3>
-                <p class="bp_parag" data-bh_parag>
-                    Dogs are the ones that require much more time, attention and money. They are generally considered to be much more social than cats. On the other hand, cats are quite independent, they are much easier to care for, they are quite simple and take up a smaller part of the household budget.
+                <p class="bp_parag" data-responsibility_parag>
+                    Children who are obliged to take the dog for a walk or feed it regularly learn responsibility earlier, which will definitely be useful to them later in life. Also, research has shown that children who have a dog as a pet have a stronger immune system and are less likely to miss school due to illness, as well as having a higher degree of self-confidence.
                 </p>
             </div>
         </section>
@@ -144,33 +143,54 @@
 
 
 
-    <section class="best_pets big_flex big_flex_reverse">
-        <div class="best_pets_wrapper best_pets_wrapper2 flex_reverse">
-            <div class="bp_img picture_cover">
-                <!-- <div class="think_overlay"></div> -->
-                <!-- <img src="img/think_background.jpg" alt="best_pets"> -->
-            </div>
-            <div class="bp_text bp_text2 blue_padding">
-                <h3 class="bp_heading" data-tc_heading>
-                    you need to think carefully
-                </h3>
-                <p class="bp_parag" data-tc_parag>
-                    A dog is a very intelligent animal with which you will not have many problems. You can teach him some neat tricks. The independence of a cat as a pet can also be an advantage, because you won't have to worry when you leave the apartment for work and obligations.
-                </p>
-            </div>
+    <section class="gallery">
+        <div class="gallery_text">
+            <h3 class="bp_heading" data-gallery>
+                gallery
+            </h3>
         </div>
 
+        <div class="slider_wrapper">
+            <button id="left_btn">
+                <img src="img/slide_big.png" alt="slide">
+            </button>
+
+            <div class="counter_wrapper">
+                <p class="count_slide">
+                    <span data-slide_count>slide</span>
+                    <span id="number_slide">1</span>
+                </p>
+            </div>
+
+            <div class="slider_images">
+                <img src="img/dog_1.jpg" alt="dog_1">
+                <img src="img/dog_2.jpg" alt="dog_2">
+                <img src="img/dog_3.jpg" alt="dog_3">
+                <img src="img/dog_4.jpg" alt="dog_4">
+                <img src="img/dog_5.jpg" alt="dog_5">
+            </div>
+
+
+            <button id="right_btn">
+                <img src="img/slide_big.png" alt="slide">
+            </button>
+        </div>        
+    </section>
+
+
+
+    <section class="health">
         <div class="but_how">
-            <h3 class="bp_heading" data-ay_heading>
-                think about yourself
+            <h3 class="bp_heading but_how2h" data-health_heading>
+                Positive impact on mental health
             </h3>
-            <p class="bp_parag" data-ay_parag>
-                Cats are really good pets that you can cuddle a lot with, and if you don't have plenty of time it can be a good choice. On the other hand, if you have more time to devote to a pet, consider a dog because you can take it for long walks, runs and even bike rides.
+            <p class="bp_parag but_how2p" data-health_parag>
+                Dog owners smile more, are happier and more relaxed, suffer less from depression and feel less lonely. Dogs undoubtedly have a beneficial effect on mental health and emotional state, because in a dog we have a friend who always listens to us, without ever judging us. A dog is a reliable and faithful friend and can be a great comfort in difficult days. Dogs simply make us happy and make our life more beautiful and fulfilling. It is up to us to protect them as much as they protect us.
             </p>
         </div>
     </section>
 
-    
+
     <footer>
         <div class="footer_wrapper">
             <p class="footer_parag">
@@ -180,11 +200,14 @@
             <p class="footer_parag">&copy; Copyright 2022</p>
         </div>
     </footer>
-    
+
 
     <script src="app/menu_icon.js"></script>
-    <script src="app/change_language.js"></script>
-    <script src="app/storage_languages.js"></script>
+    <script src="app/change_language_dog.js"></script>
+    <script src="app/storage_languages_dog.js"></script>
+    <script src="app/slider.js"></script>
     <script src="app/hide_header.js"></script>
+    
+
 </body>
 </html>

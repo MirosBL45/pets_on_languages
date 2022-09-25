@@ -1,0 +1,26 @@
+.footer_wrapper {
+    background: $background_color_green;
+    text-align: center;
+    padding: 1.8rem;
+    color: $text_color_strong_cream;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.footer_parag {
+    font-size: 1.2rem;
+
+    a {
+        text-transform: none;
+    }
+
+    a:hover {
+        color: $text_color_blue;
+    }
+}
+
+.footer_parag:first-child {
+    margin-bottom: 0.5rem;
+}

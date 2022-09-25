@@ -1,3 +1,50 @@
+@include media_small {
+    .choose_pet {
+        .choose_parag {
+            line-height: 1.5;
+        }
+    }
+
+
+    .bp_parag {
+        line-height: 1.3;
+    }
+
+
+    .gallery_card {
+        width: 400px;
+        height: 266px;
+    }
+
+    .first_card {
+        margin-left: 4rem;
+    }
+
+    .gallery_card:last-child {
+        margin-right: 3.995rem;
+    }
+
+    .pre_btn,
+    .nxt_btn {
+        height: 266px;
+        width: 4rem;
+    }
+
+    .pre_btn {
+        height: 267px;
+    }
+
+    .slider_wrapper .slider_images {
+        padding: 0;
+    }
+
+
+    .slider_wrapper .slider_images img {
+        object-fit: contain;
+    }
+}
+
+
 @include media_md {
     header {
         .header_content {
@@ -16,7 +63,7 @@
 
     .globe_wrapper {
         .lang {
-            font-size: 1.5rem;
+            font-size: 24px;
         }
 
         img {
@@ -53,14 +100,90 @@
 
             &__item {
                 display: inline;
-                padding-right: 0.9rem;
+                padding-right: 14.4px;
             }
 
             &__link {
-                font-size: 1.5rem;
+                font-size: 24px;
             }
         }
     }
+
+
+    .gallery_card {
+        width: 650px;
+        height: 433px;
+    }
+
+    .first_card {
+        margin-left: 5rem;
+    }
+
+    .gallery_card:last-child {
+        margin-right: 4.995rem;
+    }
+
+    .pre_btn,
+    .nxt_btn {
+        height: 433px;
+        width: 5rem;
+    }
+
+    .pre_btn {
+        height: 434px;
+    }
+}
+
+@include media_big {
+    .best_pets_wrapper {
+        flex-direction: row;
+    }
+
+    .flex_reverse {
+        flex-direction: row-reverse;
+    }
+
+    .bp_text {
+        width: 50vw;
+        text-align: left;
+    }
+
+    .bp_img {
+        width: 50%;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .picture_cover {
+        height: auto;
+    }
+
+
+    .gallery_card {
+        width: 800px;
+        height: 533px;
+    }
+
+    .first_card {
+        margin-left: 6rem;
+    }
+
+    .gallery_card:last-child {
+        margin-right: 5.995rem;
+    }
+
+    .pre_btn,
+    .nxt_btn {
+        height: 533px;
+        width: 6rem;
+    }
+
+    .pre_btn {
+        height: 534px;
+    }
+
 }
 
 
@@ -82,11 +205,8 @@
     }
 
     .nav {
-
         .menu-nav {
-
             &__item {
-                display: inline;
                 padding-right: 45px;
             }
 
@@ -95,6 +215,18 @@
 
     .master_container {
         padding: 0 90px;
+    }
+
+    .choose_pet {
+        .choose_parag {
+            line-height: 1.7;
+        }
+    }
+
+
+    .bp_parag {
+        line-height: 1.5;
+
     }
 }
 
@@ -109,7 +241,6 @@
         .menu-nav {
 
             &__item {
-                display: inline;
                 padding-right: 100px;
             }
 
@@ -132,5 +263,59 @@
     .master_container {
         padding: 0 150px;
         max-width: 2600px;
+    }
+
+    .big_flex {
+        display: flex;
+    }
+
+    .big_flex_reverse {
+        flex-direction: row-reverse;
+    }
+
+    .best_pets_wrapper {
+        flex-basis: 65%;
+    }
+
+    .bp_text {
+        text-align: center;
+    }
+
+    .blue_padding {
+        padding: 1rem;
+    }
+
+    .but_how {
+        background: $background_color_dark_cream;
+        padding: 1rem;
+        flex-basis: 35%;
+    }
+
+    .bp_text2 {
+        background: $background_color_dark_blue;
+    }
+
+    .bp_heading {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .bp_parag {
+        font-size: 0.8rem;
+        color: $text_color_blue;
+    }
+
+    // .picture_cover {
+    //     height: 15vw;
+    // }
+
+    .but_how2h {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .but_how2p {
+        font-size: 1.2rem;
+        line-height: 1.5;
     }
 }

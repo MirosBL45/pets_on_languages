@@ -20,7 +20,6 @@
 <body>
 
 
-
     <header>
         <div class="header_content master_container">
             <div class="menu-btn">
@@ -35,7 +34,7 @@
     
             <nav class="nav">
                 <ul class="menu-nav">
-                    <li class="menu-nav__item">
+                    <li class="menu-nav__item active">
                         <a href="cat.html" class="menu-nav__link">
                             <div data-cat_link class="link_text">cat</div>
                             <div class="line_hover"></div>
@@ -105,11 +104,11 @@
 
 
     <section class="choose_pet index_container">
-        <h2 class="choose_heading" data-choose_heading>
-            how to choose a pet
+        <h2 class="choose_heading" data-cat_heading>
+            а cat
         </h2>
-        <p class="choose_parag" data-choose_parag>
-            Regardless of all the complications that pets bring, the amount of love and happiness that animals bring to a home is immeasurable and worth every effort.
+        <p class="choose_parag" data-cat_parag>
+            People often have prejudices against cats as pets, considering them cold, disinterested, and even rude roommates. However, that is far from the truth. These magical furry beauties can be perfect pets for anyone.
         </p>
     </section>
 
@@ -119,24 +118,24 @@
         <section class="best_pets big_flex">
             <div class="best_pets_wrapper">
                 <div class="bp_img">
-                    <img src="img/best_pets_background.jpg" alt="best_pets">
+                    <img src="img/cat_side.jpg" alt="yellow_cat">
                 </div>
                 <div class="bp_text blue_padding">
-                    <h3 class="bp_heading" data-bp_heading>
-                        The best pets - cats and dogs
+                    <h3 class="bp_heading" data-yc_heading>
+                        They recognize when the owner is sad
                     </h3>
-                    <p class="bp_parag" data-bp_parag>
-                        The best pets are cats and dogs. At least that's what the number of families who narrowed their selection down to these two categories says. The choice can be difficult, because many factors separate them into two completely different categories.
+                    <p class="bp_parag" data-yc_parag>
+                        A cat can use its seventh sense to sense when its owner is sad, depressed, afraid, etc. Then the cat responds by amplifying his communication signals, for example by snuggling more vigorously or meowing loudly.
                     </p>
                 </div>
             </div>
     
             <div class="but_how">
-                <h3 class="bp_heading" data-bh_heading>
-                    but how to choose?
+                <h3 class="bp_heading" data-compassion_heading>
+                    They teach the child the values of compassion
                 </h3>
-                <p class="bp_parag" data-bh_parag>
-                    Dogs are the ones that require much more time, attention and money. They are generally considered to be much more social than cats. On the other hand, cats are quite independent, they are much easier to care for, they are quite simple and take up a smaller part of the household budget.
+                <p class="bp_parag" data-compassion_parag>
+                    It is in nature for most dogs to like to be "bothered" and hunted, and tolerate moderate roughness. Cats, on the other hand, don't like it. If you treat a cat roughly, it will run away and stop interacting with humans. In this way, the child learns the difference between tougher, more tolerant pets, such as dogs, and those that require more careful, gentle handling, such as cats.
                 </p>
             </div>
         </section>
@@ -144,33 +143,56 @@
 
 
 
-    <section class="best_pets big_flex big_flex_reverse">
-        <div class="best_pets_wrapper best_pets_wrapper2 flex_reverse">
-            <div class="bp_img picture_cover">
-                <!-- <div class="think_overlay"></div> -->
-                <!-- <img src="img/think_background.jpg" alt="best_pets"> -->
-            </div>
-            <div class="bp_text bp_text2 blue_padding">
-                <h3 class="bp_heading" data-tc_heading>
-                    you need to think carefully
-                </h3>
-                <p class="bp_parag" data-tc_parag>
-                    A dog is a very intelligent animal with which you will not have many problems. You can teach him some neat tricks. The independence of a cat as a pet can also be an advantage, because you won't have to worry when you leave the apartment for work and obligations.
-                </p>
-            </div>
+    <section class="gallery">
+        <div class="gallery_text">
+            <h3 class="bp_heading" data-gallery>
+                gallery
+            </h3>
         </div>
 
+        <div class="slider_wrapper">
+            <button id="left_btn">
+                <img src="img/slide_big.png" alt="slide">
+            </button>
+
+            <div class="counter_wrapper">
+                <p class="count_slide">
+                    <span data-slide_count>slide</span>
+                    <span id="number_slide">1</span>
+                </p>
+            </div>
+
+            <div class="slider_images">
+                <img src="img/cat_1.jpg" alt="cat_1">
+                <img src="img/cat_2.jpg" alt="cat_2">
+                <img src="img/cat_3.jpg" alt="cat_3">
+                <img src="img/cat_4.jpg" alt="cat_4">
+                <img src="img/cat_5.jpg" alt="cat_5">                
+            </div>
+
+
+            <button id="right_btn">
+                <img src="img/slide_big.png" alt="slide">
+            </button>
+        </div>
+        
+    </section>
+
+
+
+    <section class="health">
         <div class="but_how">
-            <h3 class="bp_heading" data-ay_heading>
-                think about yourself
+            <h3 class="bp_heading but_how2h" data-health_heading>
+                great for health
             </h3>
-            <p class="bp_parag" data-ay_parag>
-                Cats are really good pets that you can cuddle a lot with, and if you don't have plenty of time it can be a good choice. On the other hand, if you have more time to devote to a pet, consider a dog because you can take it for long walks, runs and even bike rides.
+            <p class="bp_parag but_how2p" data-health_parag>
+                A cat curled up on your lap, near your feet or next to your neck while you relax – and you'll feel like you're in the coziest paradise. They also like to sleep with their owner and thus keep each other warm. Also, sound of a cat's purr can lower blood pressure and reduce stress, One of the great advantages of living with a cat is that it does not need to be walked to relieve itself. Put her in a litter box and she will learn very quickly that this is where she goes to defecate. Perfect when it’s raining outside.
             </p>
         </div>
     </section>
 
     
+
     <footer>
         <div class="footer_wrapper">
             <p class="footer_parag">
@@ -180,11 +202,12 @@
             <p class="footer_parag">&copy; Copyright 2022</p>
         </div>
     </footer>
-    
+
 
     <script src="app/menu_icon.js"></script>
-    <script src="app/change_language.js"></script>
-    <script src="app/storage_languages.js"></script>
+    <script src="app/change_language_cat.js"></script>
+    <script src="app/storage_languages_cat.js"></script>
+    <script src="app/slider.js"></script>
     <script src="app/hide_header.js"></script>
 </body>
 </html>

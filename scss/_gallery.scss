@@ -1,0 +1,66 @@
+.slider_wrapper {
+    width: 100%;
+    height: 40vw;
+    position: relative;
+    background: $background_color_green;
+
+    .counter_wrapper {
+        position: absolute;
+        bottom: 0;
+        color: $text_color_blue;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .count_slide {
+        background: rgba($color: $background_color_green, $alpha: 0.3);
+        padding: 0.3rem 0;
+        width: calc(100% - 15rem);
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .slider_images {
+        height: 100%;
+        padding: 0 7.5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+
+        img:first-child {
+            display: block;
+        }
+    }
+
+    button {
+        height: 100%;
+        width: 5rem;
+        border: none;
+        outline: none;
+        background: $background_color_dark_cream;
+        cursor: pointer;
+        position: absolute;
+        z-index: 5;
+        @include transition-ease;
+        @include center-point;
+    }
+
+    button:hover {
+        background: $text_color_strong_cream;
+    }
+
+    #right_btn {
+        right: 0;
+        top: 0;
+    }
+
+    #left_btn {
+        transform: rotate(180deg);
+    }
+}

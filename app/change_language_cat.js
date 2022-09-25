@@ -9,16 +9,23 @@ const catLinkEl = document.querySelector('[data-cat_link]');
 const dogLinkEl = document.querySelector('[data-dog_link]');
 const rabbitLinkEl = document.querySelector('[data-rabbit_link]');
 const mainHeadingEl = document.querySelector('[data-main_heading]');
-const chooseHeadingEl = document.querySelector('[data-choose_heading]');
-const chooseParagEl = document.querySelector('[data-choose_parag]');
-const bpHeadingEl = document.querySelector('[data-bp_heading]');
-const bpParagEl = document.querySelector('[data-bp_parag]');
-const bhHeadingEl = document.querySelector('[data-bh_heading]');
-const bhParagEl = document.querySelector('[data-bh_parag]');
-const tcHeadingEl = document.querySelector('[data-tc_heading]');
-const tcParagEl = document.querySelector('[data-tc_parag]');
-const ayHeadingEl = document.querySelector('[data-ay_heading]');
-const ayParagEl = document.querySelector('[data-ay_parag]');
+
+const catHeadingEl = document.querySelector('[data-cat_heading]');
+const catParagEl = document.querySelector('[data-cat_parag]');
+
+const ycHeadingEl = document.querySelector('[data-yc_heading]');
+const ycParagEl = document.querySelector('[data-yc_parag]');
+
+const compassionHeadingEl = document.querySelector('[data-compassion_heading]');
+const compassionParagEl = document.querySelector('[data-compassion_parag]');
+
+const galleryHeadingEl = document.querySelector('[data-gallery]');
+const galleryCountEl = document.querySelector('[data-slide_count]');
+
+const healthHeadingEl = document.querySelector('[data-health_heading]');
+const healthParagEl = document.querySelector('[data-health_parag]');
+
+
 const footerEl = document.querySelector('[data-footer]');
 const footerLinkEl = document.querySelector('[data-footer_link]');
 
@@ -44,16 +51,23 @@ langLinksEl.forEach(el => {
         dogLinkEl.textContent = languageStorage[givelangEl].dogLink;
         rabbitLinkEl.textContent = languageStorage[givelangEl].rabbitLink;
         mainHeadingEl.textContent = languageStorage[givelangEl].mainHeading;
-        chooseHeadingEl.textContent = languageStorage[givelangEl].chooseHeading;
-        chooseParagEl.textContent = languageStorage[givelangEl].chooseParag;
-        bpHeadingEl.textContent = languageStorage[givelangEl].bpHeading;
-        bpParagEl.textContent = languageStorage[givelangEl].bpParag;
-        bhHeadingEl.textContent = languageStorage[givelangEl].bhHeading;
-        bhParagEl.textContent = languageStorage[givelangEl].bhParag;
-        tcHeadingEl.textContent = languageStorage[givelangEl].tcHeading;
-        tcParagEl.textContent = languageStorage[givelangEl].tcParag;
-        ayHeadingEl.textContent = languageStorage[givelangEl].ayHeading;
-        ayParagEl.textContent = languageStorage[givelangEl].ayParag;
+
+        catHeadingEl.textContent = languageStorage[givelangEl].catHeading;
+        catParagEl.textContent = languageStorage[givelangEl].catParag;
+
+        ycHeadingEl.textContent = languageStorage[givelangEl].ycHeading;
+        ycParagEl.textContent = languageStorage[givelangEl].ycParag;
+
+        compassionHeadingEl.textContent = languageStorage[givelangEl].compassionHeading;
+        compassionParagEl.textContent = languageStorage[givelangEl].compassionParag;
+
+        galleryHeadingEl.textContent = languageStorage[givelangEl].galleryHeading;
+        galleryCountEl.textContent = languageStorage[givelangEl].galleryCount;
+
+        healthHeadingEl.textContent = languageStorage[givelangEl].healthHeading;
+        healthParagEl.textContent = languageStorage[givelangEl].healthParag;
+
+
         footerEl.textContent = languageStorage[givelangEl].footer;
         footerLinkEl.textContent = languageStorage[givelangEl].footerLink;
     })
